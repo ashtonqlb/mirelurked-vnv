@@ -1,7 +1,10 @@
-# [Viva New Vegas](https://vivanewvegas.moddinglinked.com/)
+# [Viva New Vegas - Mirelurked](https://ashtonqlb.github.io/mirelurked-vnv/index.html)
 
 [![LICENSE](https://img.shields.io/badge/license-MIT-informational.svg)](https://github.com/h5bp/html5-boilerplate/blob/master/LICENSE.txt)
 
-### A Comprehensive Fallout: New Vegas Modding Guide.
+### The Missing Setup Guide for Viva New Vegas on SteamOS 3
 
-Viva New Vegas is a modding guide for Fallout: New Vegas that will carefully walk you through how to install all the mods you will need for a perfectly stable, smooth and enjoyable experience. The guide is highly accessible for everyone, no matter your modding experience. It is still incredibly important that you read all the instructions very carefully, even if you believe you are experienced enough to skip them. There are many small instructions that are vital for your game to function, and could be easily missed if you aren't careful. Although you don't need any modding experience to use this guide, it is expected for you to be relatively experienced with operating a computer in general.
+From the Via New Vegas FAQ section on Linux support.
+> We cannot provide support for Linux as we don't use it, therefore we cannot troubleshoot issues specific to it.
+
+This guide is a replacement for the 'Setup' and 'Mod Organizer 2' portions of the Viva New Vegas guide, written specifically for SteamOS 3 (Steam Deck, Legion Go S) handheld owners looking to enjoy the finest modded Fallout: New Vegas experience man has yet to imagine.
