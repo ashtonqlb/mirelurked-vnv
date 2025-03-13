@@ -11,15 +11,15 @@
 
     <meta name="keywords"
         content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, Fallout 4, FO4, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Tale of Two Wastelands, TTW, Wabbajack, WJ, Installer">
-    <meta name="description" content="Installing and configuring Mod Organizer 2.">
+    <meta name="description" content="Installing and configuring Mod Organizer 2 on SteamOS 3.">
     <meta http-equiv='content-language' content='en-us'>
     <meta name="twitter:card" value="summary_large_image">
-    <meta property="og:site_name" content="ModdingLinked">
-    <meta property="og:title" content="Viva New Vegas">
+    <meta property="og:site_name" content="Mirelurked">
+    <meta property="og:title" content="Viva New Vegas - Mirelurked">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://vivanewvegas.moddinglinked.com">
     <meta property="og:image" content="https://vivanewvegas.moddinglinked.com/img/Others/Card.webp">
-    <meta property="og:description" content="Installing and configuring Mod Organizer 2.">
+    <meta property="og:description" content="Installing and configuring Mod Organizer 2 on SteamOS 3.">
 
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#333230">
     <meta name="darkreader-lock">
@@ -81,7 +81,6 @@
                     Setup Finish
                 </a>
             </p>
-            <hr>
             <hr>
             <p>
                 <a href="./changelog.html" title="Changelog">
@@ -227,20 +226,18 @@
 
             <span id="Installation" class="section">
                 <h2 onclick="location.href='#Installation'">Installation</h2>
-                <div class="card" id="SetCompatTool" title="Enabling Steam Tinker Launch">
+                <div class="card" id="SetCompatTool" title="Change Compatibility Settings">
+                    <h3>Change Compatibility Settings</h3>
                     <p>
-                    <p>
-                        Before we can continue, we must set Steam Tinker Launch as the compatibility tool for Fallout
-                        New
-                        Vegas. A compatibility tool is a program used to load Windows games on Steam for Linux, and we
-                        want to use Steam Tinker Launch to manage Mod Organizer 2.
+                        In order to load Mod Organizer 2, You must change your game's 'compatibility tool'. Compatibility tools, such as Valve's Proton, are software designed to allow Linux users to play Windows games. Steam Tinker Launch, which you installed earlier in the guide, is a compatibility tool that allows you to load Mod Organizer 2 before launching Fallout: New Vegas. 
+                        <br><br>
+                        To change your compatibility settings, you must do the following.
                     </p>
                     <ol>
-                        <li><a href="steam://exit">Click here</a> to exit Steam.</li>
-                        <li><a href="steam://nav/library/game/details/22380">Click here</a> to restart Steam and be
+                        <li><a href="steam://nav/library/game/details/22380">Click here</a> to be
                             taken to Fallout: New Vegas&#39; page in your Steam library</li>
-                        <li>Click on the <strong>Settings</strong> icon</li>
-                        <li>Click <strong>Properties</strong> from the drop down</li>
+                        <li>Click on the <img class="mo2-icon" src="./img/Others/Steam Settings.webp" alt="Steam settings"> icon,  which can be found third from the right in the <strong>Game Details</strong> pane.</li>
+                        <li>Click <strong>Properties</strong> from the drop down.</li>
                         <li>Click <strong>Compatibility</strong></li>
                         <li>Click the checkbox marked <strong>Force the use of a specific Steam Play compatibility
                                 tool</strong></li>
@@ -370,13 +367,13 @@
                                     Select the <strong>Ultra Preset</strong>.
                                     <div class="card-yellow">
                                         <p>
-                                            If you would prefer battery life over graphics, you can select the <b>Medium
+                                            If you would prefer battery life over graphical fidelity, you can select the <b>Medium
                                                 Preset</b> instead.
                                         </p>
                                     </div>
                                 </li>
                                 <li>
-                                    Set <strong>Resolution</strong> to your monitor's native resolution.
+                                    Set <strong>Resolution</strong> to your handheld device's native resolution.
                                     <div class="card-yellow">
                                         <p>
                                             If you can't find the right resolution in the launcher's list, do the
@@ -391,9 +388,9 @@
                                             <li>Change the following settings in the <span
                                                     class="card-basic">Display</span> section:
                                                 <br>
-                                                <span class="card-basic">iSize W</span> = your screen width
+                                                <span class="card-basic">iSize W</span> = your screen width (in pixels)
                                                 <br>
-                                                <span class="card-basic">iSize H</span> = your screen height
+                                                <span class="card-basic">iSize H</span> = your screen height (in pixels)
                                             </li>
                                         </ol>
                                         </p>
@@ -407,7 +404,7 @@
                 </div>
                 <div class="card" id="STLSettings" title="Steam Tinker Launch Settings">
                     <p>
-                    <h3>Configuring Steam Tinker Launch Settings</h3>
+                    <h3>Configuring Steam Tinker Launch</h3>
                     <p>To launch directly into Mod Organizer 2 when you play Fallout New Vegas, you will need to change some settings in Steam Tinker Launch</p>
                     <ol>
                         <li><a href="steam://rungameid/22380">Click here</a> to launch Fallout: New Vegas. A Steam Tinker Launch window should pop up. Click <strong>Main Menu</strong>.</li>

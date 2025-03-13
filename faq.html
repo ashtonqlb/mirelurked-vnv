@@ -7,14 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="img/Coco/Head Logo.webp">
 
-    <title>FAQ | Viva New Vegas</title>
+    <title>FAQ | Viva New Vegas - Mirelurked</title>
 
     <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, Fallout 4, FO4, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Tale of Two Wastelands, TTW, Wabbajack, WJ, Installer">
     <meta name="description" content="Solutions to common problems you may encounter while following the guide.">
     <meta http-equiv='content-language' content='en-us'>
     <meta name="twitter:card" value="summary_large_image">
-    <meta property="og:site_name" content="ModdingLinked">
-    <meta property="og:title" content="Viva New Vegas">
+    <meta property="og:site_name" content="Mirelurked">
+    <meta property="og:title" content="Viva New Vegas - Mirelurked">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://vivanewvegas.moddinglinked.com">
     <meta property="og:image" content="https://vivanewvegas.moddinglinked.com/img/Others/Card.webp">
@@ -76,39 +76,11 @@
                     Mod Organizer 2
                 </a>
 
-                <a href="./utilities.html" title="Utilities">
-                    Utilities
-                </a>
-
-                <a href="./bugfix.html" title="Bug Fixes">
-                    Bug Fixes
-                </a>
-
-                <a href="./basefinish.html" title="Base Finish">
-                    Base Finish
+                <a href="./setupfinish.html" title="MO2">
+                    Setup Finish
                 </a>
             </p>
             <hr>
-            <p class="pageLinks">
-                <a href="./hud.html" title="User Interface">
-                    User Interface
-                </a>
-                <a href="./gameplay.html" title="Gameplay">
-                    Gameplay
-                </a>
-                <a href="./content.html" title="Content">
-                    Content
-                </a>
-                <a href="./overhauls.html" title="Overhauls">
-                    Overhauls
-                </a>
-                <a href="./visuals.html" title="Visuals">
-                    Visuals
-                </a>
-                <a href="./finish.html" title="Extended Finish">
-                    Extended Finish
-                </a>
-            </p>
             <hr>
             <p>
                 <a href="./changelog.html" title="Changelog">
@@ -139,9 +111,9 @@
                     Mods to Avoid
                 </a>
 
-                <a href="./wabbajack.html" title="Wabbajack">
-                    Wabbajack
-                </a>
+                <!-- <a href="./wabbajack.html" title="Wabbajack">
+                    Scripted
+                </a> -->
             </p>
             <p class="sidebar-padder"></p>
             <hr>
@@ -149,9 +121,9 @@
                 <a href="https://discord.gg/S99Ary5eba" title="Discord">
                     Discord
                 </a>
-                <a href="https://paypal.me/Ungeziefi" title="Donate">
+                <!-- <a href="https://paypal.me/Ungeziefi" title="Donate">
                     Donate
-                </a>
+                </a> -->
                 <a href="https://github.com/ModdingLinked/Viva-New-Vegas" title="GitHub">
                     GitHub
                 </a>
@@ -191,23 +163,24 @@
 
                 <div class="expander-top clickable" onclick="expandCard(this, generalquestion3expander)" id="generalquestion3">
                     <p>
-                    <h3>Is Linux supported?</h3>
+                    <h3>Can I follow this guide on my Linux PC?</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
                     </p>
                 </div>
                 <div class="expander-bottom" id="generalquestion3expander">
                     <p>
-                        <strong>We cannot provide support</strong> for Linux as we don't use it, therefore we cannot troubleshoot issues specific to it.
-                        <br>
-                        <br>
-                        Assuming you already know your way around Linux, here's <strong>some information that might help you</strong>:
+                        While this guide is written with the intent of merging with the main guide later, and as such only officially supports <strong> SteamOS 3</strong>, You should be able to follow this guide with any of the following Linux distributions:
                     <ul>
-                        <li>Use Proton (for Steam) or Wine TKG or Wine-Bottles fork & Lutris (for non-Steam).</li>
-                        <li>You need Gstreamer codec suite for the game music to play.</li>
-                        <li>Direct the game so it uses a portable MO2 instance (installed in the game prefix, made by either Steam or Lutris).</li>
-                        <li>Stock Wine won't work, since stock Wine has issues with the bundled FOMOD installer.</li>
-                        <li>Install Nvidia drivers if you have an Nvidia GPU.</li>
+                        <li>Bazzite</li>
+                        <li>ChimeraOS</li>
+                        <li>Playtron</li>
+                        <li>HoloISO</li>
+                        <li>Nobara Linux</li>
+                        <li>Arch Linux</li>
+                        <li>Manjaro</li>
+                        <li>CachyOS</li>
                     </ul>
+                        Be aware that no support will be provided for users of these distributions, but if you're in the position to try other Linux distributions, you are likely competent enough to make up the difference in this guide's blind spots.
                     </p>
                 </div>
 
@@ -231,7 +204,7 @@
                 </div>
                 <div class="expander-bottom" id="generalquestion5expander">
                     <p>
-                        We <strong>will not provide any support</strong> for NVMP, redirect all questions to their server.
+                        We <strong>will not provide any support</strong> for NVMP, redirect all questions to their server. Furthermore, I don't even know how well it'll run on a Steam Deck.
                     </p>
                 </div>
 
@@ -242,20 +215,15 @@
                     </p>
                 </div>
                 <div class="expander-bottom" id="generalquestion6expander">
-                    <p>
-                        You may have noticed that when playing the game through MO2, your save files will not appear in the Documents folder like normal. This is because the guide (and Wabbajack) makes use of <b>profile-specific saves</b>, a feature that redirects them to the profile folder of your instance. You can access all of them quickly by selecting the <strong>Saves tab of MO2</strong> on the right pane.
-
-                    <div class="card-red">
-                        <p>
-                            <strong>Do not re-use vanilla saves</strong> or any save from different mod setups! A new character is required for a functional game.
-                        </p>
-                    </div>
-
+                    <p>After completing the guide, your save files will be located in<br>
+                    <span class="card-basic">~/.steam/steam/steamapps/compatdata/22380/pfx/drive_c/Modding/MO2/profiles/Viva New Vegas/saves</span>
+                    <br>
+                    But you can access them quickly by opening Mod Organizer 2 and selecting the <strong>Saves</strong> tab in the right pane.
                     </p>
                 </div>
 
                 <h2 onclick="location.href='#Troubleshooting'">Troubleshooting</h2>
-                <p>You can ask for support in the <a href="https://discord.gg/S99Ary5eba" target="_blank">ModdingLinked</a> Discord server in case any of the advice below does not solve your problem.</p>
+                <p>You can ask for support in the #linux-unofficial channel of the <a href="https://discord.gg/S99Ary5eba" target="_blank">ModdingLinked</a> Discord server in case any of the advice below does not solve your problem.</p>
                 <div class="expander-top clickable" onclick="expandCard(this, troubleshootingquestion1expander)" id="troubleshootingquestion1">
                     <p>
                     <h3>The game crashes or nothing happens when starting it</h3>
@@ -266,59 +234,11 @@
                     <p>
                         This could happen for <strong>various reasons</strong>:
                     <ul>
-                        <li>Make sure the latest VC++ Redistributables are installed:
-                            <ul>
-                                <li>
-                                    <a href="https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/" target="_blank">VC++ AIO</a>
-                                    <ol>
-                                        <li>Extract the archive and run the included <span class="card-basic">install_all.bat</span> as an administrator.</li>
-                                    </ol>
-                                </li>
-                                <li><a href="https://aka.ms/vs/17/release/vc_redist.x64.exe" target="_blank">2015-2022 X64</a></li>
-                                <li><a href="https://aka.ms/vs/17/release/vc_redist.x86.exe" target="_blank">2015-2022 X86</a></li>
-                                <li>Restart your PC.</li>
-                            </ul>
-                        </li>
-                        <li>
-                            Make sure that DirectX Redistributables are installed and functional:
-                            <ol>
-                                <li>Download the <a href="./files/DirectX Remover.7z" target="_blank">DirectX Redists Remover Script</a> and unpack it.</li>
-                                <li>Run the script as an administrator.</li>
-                                <li>Restart your PC.</li>
-                                <li>Download the <a href="https://www.microsoft.com/en-in/download/details.aspx?id=35" target="_blank">DirectX Redists Web Installer</a> and run it.</li>
-                                <div class="card-yellow">
-                                    <p>
-                                        The installer will try to install <b>Bing Bar</b> by default!
-                                        <br>
-                                        Remember to uncheck it on the second page.
-                                    </p>
-                                </div>
-                                <li>Restart your PC.</li>
-                            </ol>
-                        </li>
-                        <li>Base Address Randomization is enabled. This has to be disabled for a modded game to work, you can do so by following <a href="./setup.html#BaseAddressRandomization">these steps</a>.</li>
-                        <li>The 4GB Patcher or the Epic Games Patcher weren't run. Follow <a href="./utilities.html">the steps</a> in the guide. If you are using Wabbajack, follow <a href="./wabbajack.html#RootMods" target="_blank">these steps</a> instead.</li>
-                        <li>xNVSE is not installed correctly or at all, make sure that you have all of the <a href="./utilities.html" target="_blank">utilities</a>. If you are using Wabbajack, follow <a href="./wabbajack.html#RootMods" target="_blank">these steps</a> instead.</li>
+                        <li><a href="./mo2.html#SetCompatTool">Make sure you have Steam Tinker Launch set as your compatibility tool.</a>
+                        <li>The 4GB Patcher wasn't run. Follow <a href="./utilities.html">the steps</a> in the guide.
+                        <li>xNVSE is not installed correctly or at all, make sure that you have all of the <a href="./utilities.html" target="_blank">utilities.</a>. </li>
                         <li>You have incompatible mods lingering in your game's Data folder, this is why <a href="./setup.html#Uninstall" target="_blank">a clean slate</a> is required.</li>
-                        <li>If you are using an AMD GPU, make sure that your drivers are updated to the <a href="https://www.amd.com/en/support" target="_blank">latest version</a> or that you are using DXVK according to the <a href="https://performance.moddinglinked.com/falloutnv.html#RecommendedLimiters" target="_blank">Performance Guide</a>.</li>
-                        <li>If you are using a third-party antivirus, add exclusions to the folder Mod Organizer 2 is in. If that doesn't work, try disabling the antivirus completely and rely solely on Windows Defender (which should work fine once exclusions are present).</li>
-                        <li>Close or uninstall Overwolf.</li>
-                        <li>Most programs that ship with pre-built computers or laptops (such as OMEN Gaming Hub for HP OMEN systems) will be prone to issues and should be uninstalled or temporarily closed.</li>
-                        <li>Lock your FPS below 120 according to the <a href="https://performance.moddinglinked.com/falloutnv.html#RecommendedLimiters" target="_blank">Performance Guide</a>.</li>
-                        <li>Update your graphics driver (either <a href="https://www.nvidia.com/Download/index.aspx" target="_blank">NVIDIA</a>, <a href="https://www.amd.com/en/support" target="_blank">AMD</a> or <a href="https://www.intel.com/content/www/us/en/search.html#q=&sort=relevancy&f:@tabfilter=[Downloads]&f:@stm_10385_en=[Graphics]" target="_blank">Intel</a>).</li>
                     </ul>
-                    </p>
-                </div>
-
-                <div class="expander-top clickable" onclick="expandCard(this, troubleshootingquestion2expander)" id="troubleshootingquestion2">
-                    <p>
-                    <h3>Pink main menu</h3>
-                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
-                    </p>
-                </div>
-                <div class="expander-bottom" id="troubleshootingquestion2expander">
-                    <p>
-                        This is caused by <span class="card-basic">SMainMenuMovieIntro</span> in your <b>Fallout.ini</b> being set to 0 instead of having to value at all. This is a <strong>known issue with Bethini</strong>, which has no utility once you are using the guide's <a href="./utilities.html#CustomINI">Custom INI</a>.
                     </p>
                 </div>
 
@@ -330,7 +250,7 @@
                 </div>
                 <div class="expander-bottom" id="troubleshootingquestion3expander">
                     <p>
-                        <strong>Verify your game files</strong>.
+                        <strong><a href="steam://validate/22380">Verify your game files</a></strong>.
                     </p>
                     <p>
                         You will need to <a href="https://www.nexusmods.com/newvegas/mods/65854" target="_blank">re-run the BSA Decompressor</a> and <a href="https://www.nexusmods.com/newvegas/mods/62552" target="_blank">4GB Patcher</a> after doing this.
@@ -450,44 +370,6 @@
                     </p>
                 </div>
 
-                <div class="expander-top clickable" onclick="expandCard(this, troubleshootingquestion12expander)" id="troubleshootingquestion12">
-                    <p>
-                    <h3>Why is the Utilities Checker reporting NVTF as missing even when it's installed correctly?</h3>
-                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
-                    </p>
-                </div>
-                <div class="expander-bottom" id="troubleshootingquestion12expander">
-                    <p>
-                        If <strong>restarting your PC</strong> doesn't work, try this:
-                    <ol>
-                        <li>Download the <a href="./files/DirectX Remover.7z" target="_blank">DirectX Redists Remover Script</a> and unpack it.</li>
-                        <li>Run the script as an administrator.</li>
-                        <li>Restart your PC.</li>
-                        <li>Download the <a href="https://www.microsoft.com/en-in/download/details.aspx?id=35" target="_blank">DirectX Redists Web Installer</a> and run it.</li>
-                        <div class="card-yellow">
-                            <p>
-                                The installer will try to install <b>Bing Bar</b> by default!
-                                <br>
-                                Remember to uncheck it on the second page.
-                            </p>
-                        </div>
-                        <li>Restart your PC again.</li>
-                    </ol>
-                    </p>
-                </div>
-
-                <div class="expander-top clickable" onclick="expandCard(this, troubleshootingquestion13expander)" id="troubleshootingquestion13">
-                    <p>
-                    <h3>Bouncing NPCs or sped-up game</h3>
-                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
-                    </p>
-                </div>
-                <div class="expander-bottom" id="troubleshootingquestion13expander">
-                    <p>
-                        <strong>Lock your FPS</strong> below 120 according to the <a href="https://performance.moddinglinked.com/falloutnv.html#RecommendedLimiters" target="_blank">Performance Guide</a>.
-                    </p>
-                </div>
-
                 <div class="expander-top clickable" onclick="expandCard(this, troubleshootingquestion14expander)" id="troubleshootingquestion14">
                     <p>
                     <h3>Black patches of terrain</h3>
@@ -500,48 +382,6 @@
                     </p>
                 </div>
 
-                <div class="expander-top clickable" onclick="expandCard(this, troubleshootingquestion15expander)" id="troubleshootingquestion15">
-                    <p>
-                    <h3>Mod Organizer 2 refuses to open and creates a dump file at each try</h3>
-                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
-                    </p>
-                </div>
-                <div class="expander-bottom" id="troubleshootingquestion15expander">
-                    <p>
-                        <li>Make sure the latest VC++ Redistributables are installed:
-                            <ul>
-                                <li>
-                                    <a href="https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/" target="_blank">VC++ AIO</a>
-                                    <ol>
-                                        <li>Extract the archive and run the included <span class="card-basic">install_all.bat</span> as an administrator.</li>
-                                    </ol>
-                                </li>
-                                <li><a href="https://aka.ms/vs/17/release/vc_redist.x64.exe" target="_blank">2015-2022 X64</a></li>
-                                <li><a href="https://aka.ms/vs/17/release/vc_redist.x86.exe" target="_blank">2015-2022 X86</a></li>
-                                <li>Restart your PC.</li>
-                            </ul>
-                        </li>
-                    </p>
-                </div>
-
-                <div class="expander-top clickable" onclick="expandCard(this, troubleshootingquestion16expander)" id="troubleshootingquestion16">
-                    <p>
-                    <h3>Alt-tabbing crashes the game or prevents it from opening again</h3>
-                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
-                    </p>
-                </div>
-                <div class="expander-bottom" id="troubleshootingquestion16expander">
-                    <p>
-                        This is due to using the NVTF texture modding preset, which <strong>requires DXVK</strong> in order to keep a functional Alt-Tab. Read the <a href="https://performance.moddinglinked.com/falloutnv.html" target="_blank">Performance Guide</a> for more information and the steps to solve this.
-                    </p>
-                </div>
-
-                <div class="expander-top clickable" onclick="expandCard(this, troubleshootingquestion17expander)" id="troubleshootingquestion17">
-                    <p>
-                    <h3>Mods are downloading to Vortex instead of MO2</h3>
-                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
-                    </p>
-                </div>
                 <div class="expander-bottom" id="troubleshootingquestion17expander">
                     <p>
                     <ol>
@@ -551,7 +391,7 @@
                     </p>
                 </div>
 
-                <div class="expander-top clickable" onclick="expandCard(this, troubleshootingquestion18expander)" id="troubleshootingquestion18">
+                <!-- <div class="expander-top clickable" onclick="expandCard(this, troubleshootingquestion18expander)" id="troubleshootingquestion18">
                     <p>
                     <h3>Wabbajack errors during installation</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
@@ -566,7 +406,7 @@
                         <li>If all that doesn't work, click the settings cog in the top right of Wabbajack, log out of Nexus then log in again and restart the installation process.</li>
                     </ul>
                     </p>
-                </div>
+                </div> -->
 
                 <div class="expander-top clickable" onclick="expandCard(this, troubleshootingquestion19expander)" id="troubleshootingquestion19">
                     <p>
@@ -689,7 +529,7 @@
         </div>
     </div>
 
-    <footer>ModdingLinked 2025</footer>
+    <footer>Mirelurked 2025</footer>
 </body>
 
 </html>
