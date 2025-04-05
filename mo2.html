@@ -226,22 +226,18 @@
 
             <span id="Installation" class="section">
                 <h2 onclick="location.href='#Installation'">Installation</h2>
-                <div class="card" id="SetCompatTool" title="Change Compatibility Settings">
-                    <h3>Change Compatibility Settings</h3>
+                <div class="card" id="OpenNaK" title="Open NaK">
+                    <h3>Open NaK</h3>
                     <p>
-                        In order to load Mod Organizer 2, You must change your game's 'compatibility tool'. Compatibility tools, such as Valve's Proton, are software designed to allow Linux users to play Windows games. Steam Tinker Launch, which you installed earlier in the guide, is a compatibility tool that allows you to load Mod Organizer 2 before launching Fallout: New Vegas. 
+                        In order to install Mod Organizer 2, we will be using NaK, which automates much of the MO2 installation process.
                         <br><br>
-                        To change your compatibility settings, you must do the following.
+                        To open NaK, you must do the following
                     </p>
                     <ol>
-                        <li><a href="steam://nav/library/game/details/22380">Click here</a> to be
-                            taken to Fallout: New Vegas&#39; page in your Steam library</li>
-                        <li>Click on the <img class="mo2-icon" src="./img/Others/Steam Settings.webp" alt="Steam settings"> icon,  which can be found third from the right in the <strong>Game Details</strong> pane.</li>
-                        <li>Click <strong>Properties</strong> from the drop down.</li>
-                        <li>Click <strong>Compatibility</strong></li>
-                        <li>Click the checkbox marked <strong>Force the use of a specific Steam Play compatibility
-                                tool</strong></li>
-                        <li>Click the dropdown and select <strong>Steam Tinker Launch</strong></li>
+                        <li>Press <span class="card-basic">Ctrl + Alt + T</span> to open a Terminal window. Don't worry, it won't bite.</li>
+                        <li>Copy and paste (with <span class="card-basic">Ctrl + Shift + V</span>) the following into your open Terminal window.
+                            <textarea readonly="" style="height: 4.4em" onclick="this.focus();this.select()">sh -c "$(curl -sS https://raw.githubusercontent.com/SulfurNitride/NaK/refs/heads/main/nak-installer.sh)"</textarea></li>
+                        <li>Press any key on your keyboard to continue.</li>
                     </ol>
                     </p>
                 </div>
@@ -249,23 +245,46 @@
                 <div class="card" id="InstallingMO2" title="Installing MO2">
                     <p>
                     <h3>Installing Mod Organizer 2</h3>
+                        Now that you have opened NaK, you can install and set up MO2 with the following instructions
                     <ol>
-                        <li><a href="steam://rungameid/22380">Click here</a> to launch Fallout: New Vegas. A Steam
-                            Tinker Launch window should pop up. Click <strong>Main Menu</strong>.</li>
-                        <li>Click <strong>Mod Organizer 2</strong>. This will install Mod Organizer 2 on your Fallout:
-                            New Vegas prefix. </li>
-                        <li>Click through the installation, using defaults. <strong>When you get to a blank screen, do
-                                not close the window</strong>.
-                        </li>
+                        <li>Press <strong>1</strong>. This will open the MO2 setup menu</li>
+                        <li>Press <strong>1</strong>. This will download and install the latest version of MO2. Follow the on-screen instructions</li>
+                        <li>When prompted, press <strong>y</strong>. This will add MO2 to Steam as a Non-Steam game.</li>
+                        <li>You will now need to close NaK. Do so by pressing <strong>6</strong> and pressing <strong>5</strong></li>
+                        <li>Exit Steam by clicking here.</li>
+                        <li>Open Steam by clicking here.</li>
+                        <li>Open NaK again. When prompted to update press <strong>y</strong></li>
+                        <li>Press <strong>1</strong>. This will open the MO2 setup menu</li>
+                        <li>Press <strong>3</strong>. This will install Windows components necessary to run Viva New Vegas</li>
+                        <li>Press <strong>3</strong>. This will install Windows components necessary to run Viva New Vegas</li>
+                        <li>Press <strong>6</strong>. This will take you back to the main menu</li>
+                        <li>Press <strong>4</strong>. This will take you to the Game-Specific Menu</li>
+                        <li>Press <strong>2</strong>. This will let download mods from the Nexus using Mod Manager Download links. When Prompted, paste in <span class="card-basic">~/ModOrganizer2/nxmhandler.exe</span> with <span class="card-basic">Ctrl + Shift + V</span>.</li>
+                        <li>Exit the script by pressing <strong>4</strong>, <strong>5</strong> and <strong>5</strong></li>
                     </ol>
-
-                    <!-- <div class="card-red">
-                        <p>
-                            MO2 refuses to open? Try <a href="./faq.html#troubleshootingquestion15">these steps</a> in
-                            the FAQ.
-                        </p>
-                    </div> -->
                     </p>
+                </div>
+
+                <div class="card" id="SetCompatTool" title="Change Game Settings">
+                    <h3>Change Game Settings</h3>
+                    <p>
+                        Lastly, in order to load Mod Organizer 2, You must change it's selected 'compatibility tool'. Compatibility tools, such as Valve's Proton, are software designed to allow Linux users to play Windows games. We will also need to set a <strong>custom launch option</strong> to point Mod Organizer 2 to your Fallout New Vegas installation
+                        <br><br>
+                        To change your compatibility settings, you must do the following.
+                    </p>
+                    <ol>
+                        <li><a href="steam://nav/library/">Click here</a> to be
+                            taken to your Steam library</li>
+                        <li>Search for <strong>Mod Organizer 2</strong>, or whatever you named it during setup. Click on it.</li>
+                        <li>Click on the <img class="mo2-icon" src="./img/Others/Steam Settings.webp" alt="Steam settings"> icon,  which can be found third from the right in the <strong>Game Details</strong> pane.</li>
+                        <li>Paste the following into the box marked <strong>Launch Options</strong>
+                            <textarea readonly="" style="height: 3.3em" onclick="this.focus();this.select()">STEAM_COMPAT_DATA_PATH="/home/ky/.local/share/Steam/steamapps/compatdata/22380" %command%"</textarea></li>
+                        <li>Click <strong>Properties</strong> from the drop down.</li>
+                        <li>Click <strong>Compatibility</strong></li>
+                        <li>Click the checkbox marked <strong>Force the use of a specific Steam Play compatibility
+                                tool</strong></li>
+                        <li>Click the dropdown and select <strong>Proton Experimental</strong></li>
+                    </ol>
                 </div>
             </span>
 
@@ -335,21 +354,6 @@
                     </ol>
                     </p>
                 </div>
-                <div class="card" id="UpdateMO2" title="Update MO2">
-                    <p>
-                    <h3>Update MO2</h3>
-                    <p>The version of Mod Organizer 2 installed on your Proton prefix is likely out of date. To update
-                        Mod Organizer 2:</p>
-                    <ol>
-                        <li><a href="steam://rungameid/22380">Click here</a> to launch Fallout: New Vegas. Wait for MO2
-                            to load.</li>
-                        <li>Click the <img class="mo2-icon" src="./img/MO2/Update Available.webp"
-                            alt="MO2 Update button"> icon at the top of MO2</li>
-                        <li>Click through the update process. You do not need to change any of the settings, and doing
-                            so may break your MO2 installation.</li>
-                    </ol>
-                    </p>
-                </div>
                 <div class="card" id="GameSettings">
                     <p>
                     <h3>Game Settings</h3>
@@ -401,27 +405,6 @@
                         </li>
                     </ol>
                     </p>
-                </div>
-                <div class="card" id="STLSettings" title="Steam Tinker Launch Settings">
-                    <p>
-                    <h3>Configuring Steam Tinker Launch</h3>
-                    <p>To launch directly into Mod Organizer 2 when you play Fallout New Vegas, you will need to change some settings in Steam Tinker Launch</p>
-                    <ol>
-                        <li><a href="steam://rungameid/22380">Click here</a> to launch Fallout: New Vegas. A Steam Tinker Launch window should pop up. Click <strong>Main Menu</strong>.</li>
-                        <li>Click <strong>Game Menu</strong></li>
-                        <li>Scroll down to <b>Mod Organizer 2 options</b></li>
-                        <li>Set <b>Mod Organizer 2 mode</b> to <strong>gui</strong>.</li>
-                        <li>Set <b>Mod Organizer 2 requester timeout</b> to 0</li>
-                        <li>Click <strong>Save</strong></li>
-                        <li>Click <strong>Main Menu</strong></li>
-                        <li>Click <strong>Exit</strong></li>
-                    </ol>
-                    </p>
-                    <div class="card-yellow">
-                        <p>
-                            To change this behaviour and other settings, you may revisit these options by any time by clicking <strong>Main Menu</strong> When Fallout New Vegas starts. <br><br> You may also learn more about Steam Tinker Launch&#39;s, many, <i>many</i> options <a href="https://github.com/sonic2kk/steamtinkerlaunch/wiki/Main-Menu">here</a></p>
-                        </p>
-                    </div>
                 </div>
             </span>
 

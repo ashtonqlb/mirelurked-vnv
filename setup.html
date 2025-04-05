@@ -148,47 +148,6 @@
                         clicking <strong>Install</strong>.
                     </p>
                 </div>
-
-                <div class="card" id="InstallSTL" title="Installing Steam Tinker Launch">
-                    <p>
-                    <h3>Install Steam Tinker Launch</h3>
-                    You will also need to download Steam Tinker Launch. Steam Tinker Launch is an app that trivialises
-                    many complicated tasks that include but
-                    are not limited to
-                    <ul>
-                        <li>Installing mod managers</li>
-                        <li>Installing ReShade shaders</li>
-                        <li>Managing per-game custom versions of Proton</li>
-                        <li>Applying per-game tweaks</li>
-                    </ul>
-                    <div class="card-red">
-                        <p>
-                        Once you have installed Steam Tinker Launch you <strong>must not</strong> uninstall it. Later in this guide you will use this utility to manage your Mod Organizer 2 installation. <br><br>Uninstallation of this utility will render you <strong>unable to launch Mod Organizer 2.</strong>
-                        </p>
-                    </div>
-                    <p>We will be using it in this guide to install and manage Mod Organizer 2. Installing Steam Tinker Launch is easy but requires the light use of the terminal, to do so
-                    <ol>
-                        <li>Download <a
-                                href="https://github.com/sonic2kk/steamtinkerlaunch/archive/refs/heads/master.zip">the
-                                latest release</a> from GitHub to your <span class="card-basic">Home</span> folder.
-                            Advanced users may instead choose to clone the repository.</li>
-                        <li>Extract the downloaded .zip file as shown</li>
-                        <div class="image-container width-90">
-                            <img class="content-img" src="./img/Others/Extract and Delete Archive.webp"
-                                alt="Extract SteamTinkerLaunch to your Home directory">
-                            <div class="resize-overlay expand"></div>
-                        </div>
-                        <li>Open the newly created <span class="card-basic">steamtinkerlaunch-master</span> folder.</li>
-                        <li>Press <strong><span class="card-basic">Alt + Shift + F4</span></strong> To open a Konsole
-                            window in the <span class="card-basic">steamtinkerlaunch-master</span> folder</li>
-                        <li>Paste the following command into the open Konsole window. This will add Steam Tinker Launch
-                            to Steam.<textarea readonly="" style="height: 3.3em"
-                                onclick="this.focus();this.select()">./steamtinkerlaunch compat add</textarea></li>
-                    </ol>
-                    </p>
-                    </p>
-                    </p>
-                </div>
             </span>
 
 
@@ -280,28 +239,6 @@
                             <li>If there aren't any pop-ups, try re-installing the game, and then try again.</li>
                         </ul>
                         <li>Click <b>OK</b> then <b>Exit</b>.</li>
-                    </ol>
-                    </p>
-                </div>
-                <div class="card" id="InstallComponents" title="Installing Components">
-                    <p>
-                    <h3>Installing Windows Components</h3>
-                    <p>There are a number of additional components and libraries that are installed by default on
-                        Windows, but must be explicitly installed when you are using a compatibility layer like Proton.
-                        We will use Protontricks to install these essential components.
-                        <br><br>
-                        Installing the components is easy but requires the use of the terminal, to do so
-                    <ol>
-                        <li>Open Konsole from the App Menu. You may search for it or find it under <span
-                                class="card-basic">System > Konsole</span></li>
-                        <li>Copy and then paste the following command into the open Konsole window with <strong><span
-                                    class="card-basic">Ctrl + Shift + V</span></strong>
-                            <textarea readonly="" style="height: 5.5em"
-                                onclick="this.focus();this.select()">flatpak run com.github.Matoking.protontricks --no-bwrap 22380 -q xact xact_x64 d3dcompiler_47 d3dx11_43 d3dcompiler_43 vcrun2022 fontsmooth=rgb</textarea>
-                        </li>
-                        <li>Wait for the installation to complete. It will take approximately 5 minutes. You will know
-                            it is complete when the text stops scrolling down the Konsole window.</li>
-                        </p>
                     </ol>
                     </p>
                 </div>
