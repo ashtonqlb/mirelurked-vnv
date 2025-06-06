@@ -104,8 +104,14 @@
         </div>
 
         <div class="content">
-
             <span id="FAQ" class="section">
+                <br></br>
+                <div class="card-green">
+                    <p>
+                        This is the <b>Linux-specific FAQ! If you can't find the answer to your questions, make sure to check the <a href="https://vivanewvegas.moddinglinked.com/faq.html">Main FAQ</a> before asking for help.</b>
+                    </p>
+                </div>
+
                 <h2 onclick="location.href='#General'">General</h2>
                 <div class="expander-top clickable" onclick="expandCard(this, generalquestion1expander)" id="generalquestion1">
                     <p>
@@ -142,19 +148,20 @@
                 </div>
                 <div class="expander-bottom" id="generalquestion3expander">
                     <p>
-                        While this guide is written with the intent of merging with the main guide later, and as such only officially supports <strong> SteamOS 3.4 and above</strong>, You should be able to follow this guide with any of the following Linux distributions:
-                    <ul>
-                        <li>Steam OS 3.3 and below</li>
-                        <li>Bazzite</li>
-                        <li>ChimeraOS</li>
-                        <li>Playtron</li>
-                        <li>HoloISO</li>
-                        <li>Nobara Linux</li>
-                        <li>Arch Linux</li>
-                        <li>Manjaro</li>
-                        <li>CachyOS</li>
-                    </ul>
-                        Be aware that <strong>no support will be provided</strong> for users of these distributions, but if you're in the position to try other Linux distributions, you are likely competent enough to make up the difference in this guide's blind spots.
+                        In a word, yes.
+
+                        That said, if the warning on the front page was not enough, This guide is <strong>only</strong> meant for devices running <strong> SteamOS 3.7.8 and higher</strong>. Other users have reported successful installations with the following distributions:
+                        <ul>
+                            <li>Fedora</li>
+                            <li>Linux Mint</li>
+                            <li>Bazzite</li>
+                            <li>Ubuntu</li>
+                            <li>CachyOS</li>
+                        </ul>
+
+                        There will be absolutely no help or support provided in these cases. You are on your own. Due to the nature of SteamOS, and this guide's careful decision to use commonly-available Linux applications, With enough trial and error Viva New Vegas could theoretically be successfully installed on <strong>Any Linux distribution that can run Steam</strong>, but the difference between theory and practice is larger in practice than in theory.
+
+                        tl;dr. Yes, but caveat emptor, we won't help you if you do.
                     </p>
                 </div>
 
@@ -178,7 +185,7 @@
                 </div>
                 <div class="expander-bottom" id="generalquestion5expander">
                     <p>
-                        We <strong>will not provide any support</strong> for NVMP, redirect all questions to their server. Furthermore, I don't even know how well it'll run on a Steam Deck.
+                        We <strong>will not provide any support</strong> for NVMP, redirect all questions to their server. Furthermore it probably runs like garbage on PC handhelds anyway.
                     </p>
                 </div>
 
@@ -189,10 +196,25 @@
                     </p>
                 </div>
                 <div class="expander-bottom" id="generalquestion6expander">
-                    <p>After completing the guide, your save files will be located in<br>
-                    <span class="card-basic">~/.steam/steam/steamapps/compatdata/22380/pfx/drive_c/Modding/MO2/profiles/Viva New Vegas/saves</span>
-                    <br>
-                    But you can access them quickly by opening Mod Organizer 2 and selecting the <strong>Saves</strong> tab in the right pane.
+                    <p>After completing the guide, you can access them quickly by opening Mod Organizer 2 and selecting the <strong>Saves</strong> tab in the right pane.
+                    </p>
+                </div>
+
+                <div class="expander-top clickable" onclick="expandCard(this, generalquestion7expander)" id="generalquestion7">
+                    <p>
+                    <h3>Why aren't you using [Insert Helper Tool]?</h3>
+                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
+                    </p>
+                </div>
+                <div class="expander-bottom" id="generalquestion7expander">
+                    <p>There are a great many helper tools designed to facilitate game modding on Linux, and I am acutely aware of them. For some honourable mentions
+                        <ul>
+                            <li><a href="https://github.com/sonic2kk/steamtinkerlaunch">SteamTinkerLaunch</a> - an all-purpose shell script for Linux gaming</li>
+                            <li><a href="https://github.com/limo-app/limo">Limo</a> - a native Bethesda mod manager for Linux</li>
+                            <li><a href="https://github.com/SulfurNitride/NaK">NaK</a> - an interactive helper script for ModdingLinked guides made with AI</li>
+                        </ul>
+                    While these tools are great in their own right, We chose not to use them because they are all varying degrees more complicated to use, and this guide exists to show the ModdingLinked staff that supporting Linux users is simple, and will not add too much overhead to their day-to-day. Some of these tools do geniunely have an advantage of the MO2 installer we recommend, but it requires more time and effort on your part to understand how they work and what you're doing. 
+
                     </p>
                 </div>
 
@@ -232,35 +254,6 @@
                     </p>
                 </div>
 
-                <div class="expander-top clickable" onclick="expandCard(this, troubleshootingquestion4expander)" id="troubleshootingquestion4">
-                    <p>
-                    <h3>How do I export my modlist and/or load order?</h3>
-                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
-                    </p>
-                </div>
-                <div class="expander-bottom" id="troubleshootingquestion4expander">
-                    <p>
-                        As MO2 is the only supported manager, instructions for other managers will not be provided:
-                    <ol>
-                        <li>Click the <img class="mo2-icon" src="./img/MO2/Folders.webp" alt="MO2 Folders"> folders list in the top of MO2.</li>
-                        <li>Click <b>Open Profile Folder</b>.</li>
-                        <li>The modlist will be written in <strong>modlist.txt</strong> (written in reverse order but you can reverse this easily with text editors) and the load order is in <strong>loadorder.txt</strong>.</li>
-                    </ol>
-                    </p>
-                </div>
-
-                <div class="expander-top clickable" onclick="expandCard(this, troubleshootingquestion5expander)" id="troubleshootingquestion5">
-                    <p>
-                    <h3>GECK isn't detecting any mods</h3>
-                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
-                    </p>
-                </div>
-                <div class="expander-bottom" id="troubleshootingquestion5expander">
-                    <p>
-                        MO2 requires that you run most tools, including GECK, through its list of executables. This allows the programs to be <strong>run with VFS</strong>, loading all the mods alongside it.
-                    </p>
-                </div>
-
                 <div class="expander-top clickable" onclick="expandCard(this, troubleshootingquestion6expander)" id="troubleshootingquestion6">
                     <p>
                     <h3>There is no New Vegas option when creating an MO2 instance</h3>
@@ -273,27 +266,6 @@
                     </p>
                 </div>
 
-                <div class="expander-top clickable" onclick="expandCard(this, troubleshootingquestion7expander)" id="troubleshootingquestion7">
-                    <p>
-                    <h3>How to reset your INIs</h3>
-                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
-                    </p>
-                </div>
-                <div class="expander-bottom" id="troubleshootingquestion7expander">
-                    <p>
-                        <li>Click the <img class="mo2-icon" src="./img/MO2/INI Editor.webp" alt="MO2 INI button"> button at the top of MO2 and select <b>INI Editor</b>.</li>
-                        <li>Clear the contents of both <b>Fallout.ini</b> and <b>FalloutPrefs.ini</b>, making sure to save both.</li>
-                        <li>Run the game's launcher through MO2 and you'll have new INIs.</li>
-                    </p>
-
-                    <div class="card-yellow">
-                        <p>
-                            This process is done through MO2 because if you followed the guide you'll be using profile-specific INIs.
-                        </p>
-                    </div>
-
-                </div>
-
                 <div class="expander-top clickable" onclick="expandCard(this, troubleshootingquestion8expander)" id="troubleshootingquestion8">
                     <p>
                     <h3>Is it safe to validate game files?</h3>
@@ -303,18 +275,6 @@
                 <div class="expander-bottom" id="troubleshootingquestion8expander">
                     <p>
                         Verifying game files <strong>will revert the BSA decompression and the executable patch</strong>. You can solve this by <a href="./utilities.html#Patchers">re-running the correct patcher</a> based on your game version, then re-running the <a href="./utilities.html#Decompressor">BSA Decompressor</a>.
-                    </p>
-                </div>
-
-                <div class="expander-top clickable" onclick="expandCard(this, troubleshootingquestion9expander)" id="troubleshootingquestion9">
-                    <p>
-                    <h3>Plugin reported as incompatible during query</h3>
-                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
-                    </p>
-                </div>
-                <div class="expander-bottom" id="troubleshootingquestion9expander">
-                    <p>
-                        This is just a case of mods logging that they are not meant for the GECK if made for the game, or the other way around. <strong>Can be safely ignored</strong>.
                     </p>
                 </div>
 
@@ -345,18 +305,6 @@
                     </p>
                 </div>
 
-                <div class="expander-top clickable" onclick="expandCard(this, troubleshootingquestion14expander)" id="troubleshootingquestion14">
-                    <p>
-                    <h3>Black patches of terrain</h3>
-                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
-                    </p>
-                </div>
-                <div class="expander-bottom" id="troubleshootingquestion14expander">
-                    <p>
-                        <strong>Disable Improved Lighting Shaders</strong> in your Mod Organizer 2 modlist by unchecking its box. This issue seems to be hardware related but we do not know the specific cause at the moment.
-                    </p>
-                </div>
-
                 <div class="expander-bottom" id="troubleshootingquestion17expander">
                     <p>
                     <ol>
@@ -364,118 +312,6 @@
                         <li>Go to the Nexus tab, then click <strong>Associate with "Download with manager" links</strong>.</li>
                     </ol>
                     </p>
-                </div>
-
-
-                <div class="expander-top clickable" onclick="expandCard(this, troubleshootingquestion19expander)" id="troubleshootingquestion19">
-                    <p>
-                    <h3>Vanilla UI Plus has detected an installation error</h3>
-                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
-                    </p>
-                </div>
-                <div class="expander-bottom" id="troubleshootingquestion19expander">
-                    <p>
-                    <ol>
-                        <li><strong>Move Vanilla UI Plus below the MCM and its hotfix (MCM BugFix 2)</strong> in the left pane of MO2.</li>
-                        <li>Make sure that you have applied the guide's load order.</li>
-                    </ol>
-                    </p>
-                </div>
-
-                <h2 onclick="location.href='#Configuration'">Configuration</h2>
-                <div class="expander-top clickable" onclick="expandCard(this, configquestion1expander)" id="configquestion1">
-                    <p>
-                    <h3>How can I change FOV?</h3>
-                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
-                    </p>
-                </div>
-                <div class="expander-bottom" id="configquestion1expander">
-                    <p>
-                    <ol>
-                        <li>Click the <img class="mo2-icon" src="./img/MO2/INI Editor.webp" alt="MO2 INI button"> button at the top of MO2 and select <b>INI Editor</b>.</li>
-                        <li>Select the <b>FalloutCustom.ini</b> tab, which should already have all the guide's settings if you followed the <a href="./utilities.html#CustomINI">Custom INI steps</a>.</li>
-                        <li>Edit the 3 FOV settings to your liking, then save.</li>
-                    </ol>
-                    </p>
-                </div>
-
-                <div class="expander-top clickable" onclick="expandCard(this, configquestion2expander)" id="configquestion2">
-                    <p>
-                    <h3>Do I need to regenerate LOD?</h3>
-                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
-                    </p>
-                </div>
-                <div class="expander-bottom" id="configquestion2expander">
-                    <p>
-                        <strong>No</strong>, but you can generate vastly more detailed LOD (at a performance cost) by following the <a href="./lod.html" target="_blank">LOD guide</a>. If you are using a Viva New Vegas Extended list with no changes, you can skip a large chunk of the LOD regeneration process by using the <a href="https://www.nexusmods.com/newvegas/mods/79358" target="_blank">VNV Pre-Generated LOD</a> (the resources listed in the LOD guide are still required).
-                    </p>
-                </div>
-
-                <div class="expander-top clickable" onclick="expandCard(this, configquestion3expander)" id="configquestion3">
-                    <p>
-                    <h3>What INI changes are required?</h3>
-                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
-                    </p>
-                </div>
-                <div class="expander-bottom" id="configquestion3expander">
-                    <p>
-                        All the INI changes you'll need for stability and performance are <strong>already in the guide</strong>'s <a href="./utilities.html#CustomINI">Custom INI</a>.
-                        <br>
-                        If you find some other settings you wish to tweak, add it to <b>FalloutCustom.ini</b> through MO2's INI Editor (<img class="mo2-icon" src="./img/MO2/INI Editor.webp" alt="MO2 INI button"> on the top of MO2).
-                    </p>
-                </div>
-
-                <div class="expander-top clickable" onclick="expandCard(this, configquestion4expander)" id="configquestion4">
-                    <p>
-                    <h3>Why does the guide not clean the DLC plugins?</h3>
-                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
-                    </p>
-                </div>
-                <div class="expander-bottom" id="configquestion4expander">
-                    <p>
-                        <strong>Ultimate Edition ESM Fixes already does this</strong> (far more than what automated xEdit cleaning would do).
-                    </p>
-                </div>
-
-                <div class="expander-top clickable" onclick="expandCard(this, configquestion5expander)" id="configquestion5">
-                    <p>
-                    <h3>Is Ultrawide supported?</h3>
-                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
-                    </p>
-                </div>
-                <div class="expander-bottom" id="configquestion5expander">
-                    <p>
-                        <strong>Yes</strong>, but you'll have to take extra steps for it to work:
-                    <ol>
-                        <li>Click the <img class="mo2-icon" src="./img/MO2/INI Editor.webp" alt="MO2 INI button"> button at the top of MO2 and select <strong>INI Editor</strong>.</li>
-                        <li>Select the <strong>FalloutPrefs.ini</strong> tab.</li>
-                        <li>Change the following settings in the <span class="card-basic">Display</span> section:
-                            <br>
-                            <span class="card-basic">iSize W</span> = your screen width
-                            <br>
-                            <span class="card-basic">iSize H</span> = your screen height
-                        </li>
-                        <li>Start the game then open the <b>Tweaks</b> menu in the settings.</li>
-                        <li>Filter for <span class="card-basic">Ultrawide</span> then <strong>enable the support tweak</strong>.</li>
-                    </ol>
-                    </p>
-                </div>
-
-                <h2 onclick="location.href='#Gameplay'">Gameplay</h2>
-                <div class="expander-top clickable" onclick="expandCard(this, gameplayquestion1expander)" id="gameplayquestion1">
-                    <p>
-                    <h3>Why didn't I get any DLC pop-ups/items after starting a new game?</h3>
-                    <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
-                    </p>
-                </div>
-                <div class="expander-bottom" id="gameplayquestion1expander">
-                    <p><a href="./gameplay.html#DLCDelay" target="_blank">Leveled DLC Delay</a> delays DLC until you meet the required level or visit the respective location. <a href="./overhauls.html#LoneStar" target="_blank">Lone Star</a> also moves the pre-order pack items to the following locations:</p>
-                    <ul>
-                        <li>Tribal Pack: <span class="spoiler">Lucky Jim Mine House</span></li>
-                        <li>Caravan Pack: <span class="spoiler">Hell's Motel</span></li>
-                        <li>Classic Pack: <span class="spoiler">Wrecked Highwayman</span></li>
-                        <li>Mercenary Pack: <span class="spoiler">Bradley's Shack</span></li>
-                    </ul>
                 </div>
             </span>
 

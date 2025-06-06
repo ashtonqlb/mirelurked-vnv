@@ -195,18 +195,17 @@
 
             <span id="Installation" class="section">
                 <h2 onclick="location.href='#Installation'">Installation</h2>
-                <div class="card" id="OpenNaK" title="Open NaK">
-                    <h3>Open NaK</h3>
+                <div class="card" id="MO2Preinstall" title="Prepare Installer">
+                    <h3>Prepare Installer</h3>
                     <p>
-                        In order to install Mod Organizer 2, we will be using NaK, which automates much of the MO2 installation process.
+                        Mod Organizer 2, being Windows software, does not come with a friendly Linux installation utility. We will need to download an <i>installer</i> program, which will automate all of the required setup.
                         <br><br>
-                        To open NaK, you must do the following
+                        To download the MO2 installer you must do the following
                     </p>
                     <ol>
-                        <li>Press <span class="card-basic">Ctrl + Alt + T</span> to open a Terminal window. Don't worry, it won't bite.</li>
-                        <li>Copy and paste (with <span class="card-basic">Ctrl + Shift + V</span>) the following into your open Terminal window.
-                            <textarea readonly="" style="height: 4.4em" onclick="this.focus();this.select()">sh -c "$(curl -sS https://raw.githubusercontent.com/SulfurNitride/NaK/refs/heads/main/nak-installer.sh)"</textarea></li>
-                        <li>Press any key on your keyboard to continue.</li>
+                        <li><a href="https://github.com/Furglitch/modorganizer2-linux-installer/releases/latest">Click here</a> to be taken to the download page for the latest MO2 installer</li>
+                        <li>Download the file marked <span class="card-basic">mo2installer.tar.gz</span>. This is an archive that contains all the necessary files.</li>
+                        <li>Extract the archive in a location you will remember. I recommend doing so in your <strong>Downloads</strong> folder. You will not need to keep these files after installation is complete.</li>
                     </ol>
                     </p>
                 </div>
@@ -214,44 +213,18 @@
                 <div class="card" id="InstallingMO2" title="Installing MO2">
                     <p>
                     <h3>Installing Mod Organizer 2</h3>
-                        Now that you have opened NaK, you can install and set up MO2 with the following instructions
+                        Now that you have downloaded the latest MO2 installer, you may now begin the installation process.
                     <ol>
-                        <li>Press <strong>1</strong>. This will open the MO2 setup menu</li>
-                        <li>Press <strong>1</strong>. This will download and install the latest version of MO2. Follow the on-screen instructions</li>
-                        <li>When prompted, press <strong>y</strong>. This will add MO2 to Steam as a Non-Steam game.</li>
-                        <li>You will now need to close NaK. Do so by pressing <strong>6</strong> and pressing <strong>5</strong></li>
-                        <li>Exit Steam by <a href="steam://exit">clicking here</a>.</li>
-                        <li>Open Steam by <a href="steam://nav/games/details/22380">clicking here</a>.</li>
-                        <li>Open NaK again. When prompted to update press <strong>y</strong></li>
-                        <li>Press <strong>5</strong>. This will open the Game-Specific menu</li>
-                        <li>Press <strong>1</strong>. This will select Fallout New Vegas
-                        <li>Press <strong>1</strong>. This will install Windows components necessary to run Viva New Vegas</li>
-                        <li>Press <strong>2</strong>. This will let download mods from the Nexus using Mod Manager Download links. When Prompted, you will need to post in the location of <span class="card-basic">nxmhandler.exe</span> with <span class="card-basic">Ctrl + Shift + V</span>. You can find it inside your MO2 installation folder.</li>
-                        <li>Exit the script by pressing <strong>4</strong>, <strong>5</strong> and <strong>6</strong></li>
+                        <li>Open the extracted <span class="card-basic">mo2installer-furglitch</span> folder.</li>
+                        <li>Double click on the file marked <span class="card-basic">install.sh</span>.</li>
+                        <li>When prompted, scroll down the list and select <strong>Fallout New Vegas</strong>.</li>
+                        <li>When prompted to archive your prefix, click "No". <strong>Otherwise</strong> click "Yes"</li>
+                        <li>Follow the on-screen instructions to create a clean Fallout New Vegas prefix, then click "All done. let's continue".</li>
+                        <li>Select where you would like to install Mod Organizer 2. I strongly recommend the <strong>default</strong> installation location
+                        <li>Wait for MO2 to be downloaded and installed.</li>
                     </ol>
+                    Once installation is complete, MO2 will automatically launch when you open Fallout New Vegas from Steam.
                     </p>
-                </div>
-
-                <div class="card" id="SetCompatTool" title="Change Game Settings">
-                    <h3>Change Game Settings</h3>
-                    <p>
-                        Lastly, in order to load Mod Organizer 2, You must change it's selected 'compatibility tool'. Compatibility tools, such as Valve's Proton, are software designed to allow Linux users to play Windows games. We will also need to set a <strong>custom launch option</strong> to point Mod Organizer 2 to your Fallout New Vegas installation
-                        <br><br>
-                        To change your compatibility settings, you must do the following.
-                    </p>
-                    <ol>
-                        <li><a href="steam://nav/library/">Click here</a> to be
-                            taken to your Steam library</li>
-                        <li>Search for <strong>Mod Organizer 2</strong>, or whatever you named it during setup. Click on it.</li>
-                        <li>Click on the <img class="mo2-icon" src="./img/Others/Steam Settings.webp" alt="Steam settings"> icon,  which can be found third from the right in the <strong>Game Details</strong> pane.</li>
-                        <li>Paste the following into the box marked <strong>Launch Options</strong>
-                            <textarea readonly="" style="height: 3.3em" onclick="this.focus();this.select()">STEAM_COMPAT_DATA_PATH="/home/deck/.local/share/Steam/steamapps/compatdata/22380" %command%</textarea></li>
-                        <li>Click <strong>Properties</strong> from the drop down.</li>
-                        <li>Click <strong>Compatibility</strong></li>
-                        <li>Click the checkbox marked <strong>Force the use of a specific Steam Play compatibility
-                                tool</strong></li>
-                        <li>Click the dropdown and select <strong>Proton Experimental</strong></li>
-                    </ol>
                 </div>
             </span>
 
