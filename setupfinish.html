@@ -77,7 +77,12 @@
                 <a href="./mo2.html" title="MO2">
                     Mod Organizer 2
                 </a>
+
+                <a href="./setupfinish.html" title="MO2">
+                    Setup Finish
+                </a>
             </p>
+            <hr>
             <hr>
             <p>
                 <a href="./faq.html" title="FAQ">
@@ -90,6 +95,9 @@
                 <a href="https://discord.gg/S99Ary5eba" title="Discord">
                     Discord
                 </a>
+                <!-- <a href="https://paypal.me/Ungeziefi" title="Donate">
+                    Donate
+                </a> -->
                 <a href="https://github.com/ModdingLinked/Viva-New-Vegas" title="GitHub">
                     GitHub
                 </a>
@@ -97,38 +105,224 @@
         </div>
 
         <div class="content">
+            <span id="Manual Downloads" class="section">
+                <h2 onclick="location.href='#ManualDownloads'">Manual Downloads</h2>
+                <div class="card">
+                    <p>
+                    </p>
+                    <h3>Root Mods</h3>
+                    The following mods, unlike most others, need to be installed directly into the game's <b>Root</b>
+                    folder, <strong>not through Mod Organizer 2</strong>
+                    <br>
+                    <br>
+                    Use the <strong>Manual Download</strong> and follow the instructions provided for each mod.
+                    <p></p>
+                </div>
 
-            <span id="SetupFinish" class="section">
-                <h2 onclick="location.href='#SetupFinish'">Setup Finish</h2>
+                <div class="card" id="UniversalMPIPhraser">
+                    <p></p>
 
-                <div class="card" id="InstallingVNV" title="Installing VNV">
+                    <h3 class="link-download"><a
+                            href="https://github.com/SulfurNitride/TTW_Linux_Installer/releases/latest"
+                            target="_blank">Universal MPI Phraser</a></h3>
+                    The following mods are packaged in the proprietary MPI format and only come with Windows installers
+                    by default. <br></br>Due to licensing restrictions, You must download a Linux installer for these
+                    mods
+                    manually. Sorry.
+                    <h3 class="install">Installation instructions</h3>
+                    <ol>
+                        <li>Extract the archive to your Downloads folder</li>
+                        <li>Take note of the executable named <span class="card-basic">ttw_linux_gui</span>. This is
+                            what we will use to install mods packaged as .mpi files</li>
+                    </ol>
+                </div>
+
+
+                <div class="card" id="Decompressor">
+                    <p>
+                    </p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/65854"
+                            target="_blank">FNV BSA Decompressor</a></h3>
+                    Decompresses the vanilla BSA files to reduce loading times and stuttering. Can also fix certain
+                    sound effects not playing.
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li>
+                            <b>Main Files</b> - FNV BSA Decompressor
+                            <ol>
+                                <li>Extract the archive to your <b>Downloads</b> folder.</li>
+                                <li>Move the file <span class="card-basic">FNV BSA Decompressor.mpi</span> to your
+                                    <b>Universal MPI Phraser</b> folder
+                                </li>
+                                <li>Open the <b>Universal MPI Phraser</b>. If the <b>FNV BSA Decompressor</b> MPI file
+                                    is not automatically selected, click <b>Browse</b> to select it.</li>
+                                <li>In the box marked <b>Fallout New Vegas</b> select your <strong>Root</strong> folder.
+                                </li>
+                                <li>In the box marked <b>Decompressed Archives</b>, select your <strong>Data</strong>
+                                    folder.</li>
+                                <li>Click <strong>Install MPI.</strong>
+                                </li>
+                                <li>Wait for the process to finish. Once it has finished, you may exit the program.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <p></p>
+                </div>
+
+                <div class="card" id="ESM Fixes">
+                    <p>
+                    </p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/65854"
+                            target="_blank">Ultimate Edition ESM Fixes Remastered</a></h3>
+
+                    Optimizes and fixes thousands of records across the base game and DLC plugins to increase
+                    performance and stability.
+
+                    <h3 class="install">Installation instructions</h3>
+                    <ul>
+                        <li>
+                            <b>Main Files</b> - Ultimate Edition ESM Fixes Remastered
+                            <ol>
+                                <li>Open Mod Organizer 2</li>
+                                <li>Click the <img class="mo2-icon" src="./img/MO2/Folders.webp"
+                                        alt="MO2 folder button"> button next to the profiles bar in MO2 and select
+                                    <strong>Open Mods folder</strong>.
+                                </li>
+                                <li>Create an empty folder called <strong>Fixed ESMs</strong> inside of the <b>Mods</b>
+                                    folder.</li>
+                                <li>Take note of this new folder's path. If you installed MO2 in the default folder it
+                                    will be <span class="card-basic">~/modorganizer2-newvegas/Viva New Vegas/mods/Fixed
+                                        ESMs</span></li>
+                                <li>Extract the Ultimate Edition ESM Fixes Remastered archive to your <b>Downloads</b>
+                                    folder.</li>
+                                <li>Move the file <span class="card-basic">Ultimate Edition ESM Fixes
+                                        Remastered.mpi</span> to your
+                                    <b>Universal MPI Phraser</b> folder.
+                                </li>
+                                <li>Open the <b>Universal MPI Phraser</b>. If the <b>Ultimate Edition ESM Fixes
+                                        Remastered</b> MPI file
+                                    is not automatically selected, click <b>Browse</b> to select it.</li>
+                                <li>In the box marked <b>Fallout New Vegas</b> select your <strong>Root</strong> folder.
+                                </li>
+                                <li>In the box marked <b>Mod folder</b>, click <b>Browse</b> and navigate to your Mod
+                                    Organizer 2 folder.</li>
+                                <li>Click <strong>Install MPI.</strong>
+                                </li>
+                                <li>Wait for the process to finish. Once it has finished, you may exit the program.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <p></p>
+                </div>
+
+                <div class="card" id="Patchers">
+                    <!-- <p>
+                    </p>
+                    <h3>Game Patchers</h3>
+                    This patcher allows the game to use up to 4GB of RAM and automatically load xNVSE.
+                    <br>
+                    <br> -->
+                    <!-- Select one of the following patchers based on your game version.
+                    <div class="flex" style="flex-direction: row; align-content: center; justify-content: center;">
+                        <div class="flex" style="flex-direction: column; width: 50%; margin-right: 0.5em;">
+                            <div class="expander-top colors-gog clickable"
+                                onclick="expandCard(this, installGogExpander)" id="expander-0">
+                                <div>
+                                    <p>
+                                    </p>
+                                    <h3>Steam and GOG</h3>
+                                    <p></p>
+                                </div>
+                                <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg"
+                                    alt="UI element - Chevron">
+                            </div>
+                            <div class="expander-bottom colors-gog" id="installGogExpander" style="display: none;"> -->
+                    <p>
+                    </p>
+                    <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/62552"
+                            target="_blank">4GB Patcher</a></h3>
+                    <b>Main Files</b> - FNV4GB for Linux
+                    <ol>
+                        <li>Open the downloaded archive and <strong>move the executable</strong> file to the
+                            game's <b>Root</b> folder.</li>
+                        <li>Double-click on <strong>FalloutNVPatcher</strong> to run it.</li>
+                        <li>
+                            A Konsole window will open and it should say:
+                            <div class="card-basic">FalloutNV.exe patched!</div>
+                        </li>
+                        <li>Close Konsole and a file named <strong>FalloutNV_backup.exe</strong> should
+                            appear in the game's <b>Root</b> folder.</li>
+                    </ol>
+                    <p></p>
+                </div>
+                <!-- </div> -->
+
+                <!-- <div class="flex" style="flex-direction: column; width: 50%; margin-left: 0.5em;">
+                            <div class="expander-top colors-epic clickable"
+                                onclick="expandCard(this, installEpicExpander)" id="expander-1">
+                                <p>
+                                </p>
+                                <h3>Epic Games</h3>
+                                <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg"
+                                    alt="UI element - Chevron">
+                                <p></p>
+                            </div>
+                            <div class="expander-bottom colors-epic" id="installEpicExpander" style="display: none;">
+                                <p>
+                                </p>
+                                <h3 class="link-download"><a href="https://www.nexusmods.com/newvegas/mods/81281"
+                                        target="_blank">Epic Games Patcher</a></h3>
+                                <b>Main Files</b> - Epic Games Patcher
+                                <ol>
+                                    <li>Extract the downloaded archive to your <b>Downloads</b> folder.</li>
+                                    <li>Download <a
+                                            href="https://flathub.org/en/apps/io.github.marco_calautti.DeltaPatcher/install">Delta
+                                            Patcher</a> from the Discover Store.</li>
+                                    <li>Open Delta Patcher
+                                    </li>
+                                    <li>In the box marked <b>Original File</b> click the folder icon and use the
+                                        resultant file picker menu to select <span
+                                            class="card-basic">FalloutNV.exe</span> in the game's <strong>Root
+                                            folder</strong>.</li>
+                                    <li>In the box marked <b>XDelta Patch</b> click the folder icon and use the
+                                        resultant file picker menu to select <span
+                                            class="card-basic">patch.xdelta</span> from the Epic Games Patcher folder.
+                                    </li>
+                                    <li>Click <strong>Apply patch.</strong></li>
+                                    <li>Once the game has finished patching you may close the window.</li>
+                                </ol>
+                                <p></p>
+                            </div>
+                        </div> -->
+                <!-- </div>
+                    <p></p> -->
+            </span>
+            <span id="Finish" class="section">
+                <h2 onclick="location.href='#Finish'">Finish</h2>
+
+                <div class="card">
                     <p>
                     <h3>Installing Viva New Vegas</h3>
                     You have now finished the missing Linux setup section of Viva New Vegas. You can proceed with the
-                    rest of the guide, including VNV Extended, but <strong>be mindful of the following caveats</strong> 
-                    <ol>
-                        <li>You must skip the <a href="https://performance.moddinglinked.com/falloutnv.html">Performance and
-                                Stability Guide</a>.</li>
-                        <li>The FNV BSA Decompressor currently is finicky under Proton, and when you're running on a
-                            handheld device, space is at a premium. Instead, install the <a
-                                href="https://www.nexusmods.com/newvegas/mods/85267">zlib Updated</a> mod.</li>
-                        <li>To install the <a href="https://vivanewvegas.moddinglinked.com/utilities.html#ESMFixes">ESM
-                                fixes</a>, add the executable to MO2 first, then follow the instructions. The installer
-                            may glitch out, but <strong>don't</strong> quit until a blank orange button appears.
-                        </li>
-                        <li>Use the Linux or Python <a
-                                href="https://www.nexusmods.com/newvegas/mods/62552?tab=files">4GB patcher</a> instead
-                            of the Windows one.</li>
-                    </ol>
+                    rest of the guide, including VNV Extended, but be aware that you only need to follow
+                    <strong>Performance Mods</strong> section of the <a
+                        href="https://performance.moddinglinked.com/falloutnv.html">Performance and
+                        Stability Guide</a>. You may <i>optionally</i> follow the guidance of the FPS Limits section.
+                    </li>
                     <p>Once you're done, make sure it's fully working; fire up a new save and walk out of
                         Doc's shack. Make sure the Tweaks menu has appeared in the game settings and the pause menu
                         is listing the version numbers of various installed mods at the bottom left. </p>
                     <div class="card-yellow">
                         <p>
-                        <b>Why not do the Performance and Stability guide?</b>
+                            <b>Why skip most of the Performance and Stability guide?</b>
                         </p>
-                        <p> Most (not quite all) of that section of the guide is concerned with making Fallout use a more modern rendering pipeline on Windows; the DXVK bit and the SpecialK/RivaTuner section. This is already included in your Proton install, so you can safely skip all of it. Additionally, modern PC handheld devices are pretty capable of running Fallout: New Vegas without extensive tuning.
-                        </p>    
+                        <p>
+                            Most (not quite all) of that section of the guide is concerned with making Fallout use a
+                            more modern rendering pipeline. SteamOS already ships with a modern rendering pipeline, and
+                            it's built in Game Mode session comes with pretty much everything you would have to do by
+                            hand (Including the frame limiter!).<br></br>
+                            That all said, performance mods are performance mods and will improve your framerate/game
+                            stability. So that bit, you should absolutely pay attention to.
                     </div>
                     </p>
                 </div>
@@ -139,8 +333,13 @@
                     <img class="mirror" src="./img/UI/Arrow.svg" alt="Back Arrow">
                     <span class="arrowText"></span>
                 </a>
-
-                <a href="https://vivanewvegas.moddinglinked.com/utilities.html" id="next" rel="next" class="navigationArrow">
+                <style>
+                    a#next.navigationArrow {
+                        display: flex !important;
+                    }
+                </style>
+                <a href="https://vivanewvegas.moddinglinked.com/utilities.html#MO2Downloads" id="next" rel="next"
+                    class="navigationArrow">
                     <span class="arrowText">Utilities</span>
                     <img src="./img/UI/Arrow.svg" alt="Forward Arrow">
                 </a>

@@ -106,13 +106,43 @@
         </div>
 
         <div class="content">
+
             <span id="Preparation" class="section">
                 <h2 onclick="location.href='#Preparation'">Preparation</h2>
+                <div class="card" id="EnterDesktopMode" title="Enter Desktop Mode">
+                    <p>
+                    <h3>Enter Desktop Mode</h3>
+
+                    <div class="card-green">
+                        <p>
+                            If you are already using your device in Desktop mode, proceed to the next step
+                            immediately.
+                        </p>
+                    </div>
+
+                    <p>
+                        Before we begin, you will need to put your device into Desktop mode. This will allow you to use
+                        your device like a desktop computer, which will be critical for the remainder of this guide.
+                    </p>
+
+                    <ol>
+                        <li>Press and hold the power button on your device for three seconds. A menu dialogue will
+                            appear.
+                        </li>
+                        <li>Select the option marked <strong>Switch to Desktop.</strong>
+                        </li>
+                    </ol>
+                    </p>
+                </div>
 
                 <div class="card" id="InstallProtontricks" title="Installing Protontricks">
                     <p>
                     <h3>Installing Protontricks</h3>
                     </p>
+                    <div class="card-yellow">
+                        <p>If you are installing the game with <b>Heroic Games Launcher</b> (GOG/Epic) proceed to the
+                            step immediately.</p>
+                    </div>
                     <p>
                         We will need Protontricks in order to manage and install closed-source Windows components that
                         are not included by default in your Fallout: New Vegas installation. Installing Protontricks is
@@ -123,37 +153,159 @@
             </span>
 
 
+
             <span id="Installation" class="section">
                 <h2 onclick="location.href='#Installation'">Installation</h2>
 
-                <div class="card" id="Installing the Game">
+                <div class="card" id="InstallLocation">
                     <p>
-                    <h3>Installing the Game</h3>
-
-                    <div class="card-yellow">
-                        <p>
-                            <b>Where should I install the game?</b>
-                        </p>
-                        <p>
-                            Opposite to Windows, you should <strong>absolutely</strong> install Fallout: New Vegas on
-                            your device's internal storage, in the default location.
-                        </p>
-                    </div>
+                    <h3>Choosing a Location</h3>
+                    <strong>A clean installation</strong> is not only required to get rid of any potential leftover mod
+                    files, but also to make sure the game is installed in a safe location. Here is what you need to know
+                    when choosing where to install your game:
+                    <br>
+                    <ul>
+                        <li>
+                            <b>Install the game in the default library folder</b>: This includes but is not limited to
+                            <span class="card-basic">~/.steam/steam/steamapps/common</span> and <span
+                                class="card-basic">~/Heroic/Games</span>
+                            <br>
+                            <div class="card-yellow">
+                                <p>
+                                    <b>Where should I install the game?</b>
+                                </p>
+                                <p>
+                                    Contrary to Windows, the default location is the safest location. This is because
+                                    SteamOS does not let you access any system folders. Installing in the default folder
+                                    also makes it easier to find the game files should anything go wrong.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <b>Install on internal storage if possible</b>: Having the game on your internal storage
+                            will drastically improve loading times and decrease stuttering.
+                        </li>
+                    </ul>
                     </p>
+                </div>
+
+                <div class="card" id="Uninstall">
+                    <p>
+                    <h3>Uninstalling the Games</h3>
 
                     <div class="card-green">
                         <p>
-                            If you have never installed the games before, go directly to step 5.
+                            If you have never installed the game before, go directly to the next section.
                         </p>
                     </div>
 
-                    <ol>
-                        <li><a href="steam://uninstall/22380" target="_blank">Click here</a>, then click
-                            <strong>Uninstall</strong>
-                        </li>
-                        <li><a href="steam://install/22380" target="_blank">Click here</a> to install Fallout: New Vegas
-                        </li>
-                    </ol>
+                    As the game is available on Steam and Heroic Games Launcher (GOG, Epic), there are separate
+                    instructions for each
+                    version. You obviously only need to follow the directions for the versions you have.
+                    <div class="expander-top colors-steam clickable width-90"
+                        onclick="expandCard(this, uninstallSteamExpander)" id="uninstallSteam">
+                        <p>
+                        <h3>Steam</h3>
+                        <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg"
+                            alt="UI element - Chevron">
+                        </p>
+                    </div>
+
+                    <div class="expander-bottom colors-steam width-90" id="uninstallSteamExpander">
+                        <ol>
+                            <li>Open Steam and go to your <strong>Library</strong>.</li>
+                            <li>Find <strong>Fallout: New Vegas</strong> in the list.</li>
+                            <li>Right-click on it and select <strong>Manage</strong> -> <strong>Uninstall</strong>.</li>
+                        </ol>
+                    </div>
+
+                    <div class="expander-top colors-gog clickable width-90"
+                        onclick="expandCard(this, uninstallGogExpander)" id="uninstallGog">
+                        <p>
+                        <h3>Heroic Games Launcher</h3>
+                        <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg"
+                            alt="UI element - Chevron">
+                        </p>
+                    </div>
+
+                    <div class="expander-bottom colors-gog width-90" id="uninstallGogExpander">
+                        <ol>
+                            <li>Open Heroic Games Launcher and go to your <strong>Library</strong>.</li>
+                            <li>Find <strong>Fallout: New Vegas</strong> in the list.</li>
+                            <li>Right-click on it and select <strong>Uninstall</strong>.</li>
+                        </ol>
+                    </div>
+
+                    <div class="expander-bottom colors-epic width-90" id="uninstallEpicExpander">
+
+                        <div class="card-red">
+                            <p>
+                                If you have already uninstalled the games, make sure to follow step 4 to ensure there
+                                are no
+                                leftovers.
+                            </p>
+                        </div>
+
+                        <ol>
+                            <li>Open the Epic Games Launcher and go to your <strong>Library</strong>.</li>
+                            <li>Find <strong>Fallout: New Vegas</strong> in the list.</li>
+                            <li>Click on 3 dots and select uninstall from the menu.</li>
+                            <li>Navigate to <span class="card-basic">Documents\My Games\FalloutNV_Epic</span> and delete
+                                all INI files inside it.</li>
+                        </ol>
+                    </div>
+
+                    </p>
+                </div>
+
+                <div class="card" id="Install">
+                    <p>
+                    <h3>Installing the Games</h3>
+                    As the games are available on Steam and Heroic Games Launcher (GOG, Epic), there are separate
+                    instructions for each platform. You obviously only need to follow the directions for the version you
+                    have.
+                    <div class="expander-top colors-steam clickable width-90"
+                        onclick="expandCard(this, installSteamExpander)" id="installSteam">
+                        <p>
+                        <h3>Steam</h3>
+                        <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg"
+                            alt="UI element - Chevron">
+                        </p>
+                    </div>
+
+                    <div class="expander-bottom colors-steam width-90" id="installSteamExpander">
+                        <ol>
+                            <li>Open Steam and go to your <strong>Library</strong>.</li>
+                            <li>Find <strong>Fallout: New Vegas</strong> in the list and select
+                                <strong>Install</strong>.
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="expander-top colors-gog clickable width-90"
+                        onclick="expandCard(this, installGogExpander)" id="installGog">
+                        <div>
+                            <p>
+                            <h3>Heroic Games Launcher</h3>
+                            </p>
+                        </div>
+                        <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg"
+                            alt="UI element - Chevron">
+                    </div>
+
+                    <div class="expander-bottom colors-gog width-90" id="installGogExpander">
+                        <ol>
+                            <li>Open Heroic Games Launcher and go to your <strong>Library</strong>.</li>
+                            <li>Find <strong>Fallout: New Vegas</strong> in the list and select
+                                <strong>Install</strong>.
+                            </li>
+                            <li>Set the <strong>Install to</strong> location to a location of your choice.</li>
+                            <ul>
+                                <li>It is <strong>strongly recommended</strong> to install the game inside the default
+                                    folder.</li>
+                            </ul>
+                        </ol>
+                    </div>
                     </p>
                 </div>
             </span>
@@ -169,75 +321,68 @@
                     <ul>
                         <li><strong>Root</strong> folder: Where the game is installed.</li>
                         <ul>
-                            <div class="card-basic">
-                                <p>~/.steam/steam/steamapps/common/Fallout New Vegas</p>
-                            </div>
+                            <li>For Steam:
+                                <div class="card-basic">
+                                    <p>~/.steam/steam/steamapps/common/Fallout New Vegas</p>
+                                </div>
+                            </li>
+                            <li>For Heroic Games Launcher:
+                                <div class="card-basic">
+                                    <p>~/Games/Heroic/Fallout New Vegas</p>
+                                </div> (unless you manually changed the installation path).
+                            </li>
                         </ul>
                     </ul>
 
                     <ul>
                         <li><strong>Data</strong> folder: Where all of the game's assets are located.</li>
                         <ul>
-                            <div class="card-basic">
-                                <p>~/.steam/steam/steamapps/common/Fallout New Vegas/Data</p>
-                            </div>
+                            <li>For Steam:
+                                <div class="card-basic">
+                                    <p>~/.steam/steam/steamapps/common/Fallout New Vegas/Data</p>
+                                </div>
+                            </li>
+                            <li>For Heroic Games Launcher:
+                                <div class="card-basic">
+                                    <p>~/Games/Heroic/Fallout New Vegas/Data</p>
+                                </div>
+                            </li>
                         </ul>
                     </ul>
 
                     <ul>
-                        <li><strong>Prefix</strong> folder: Where all of the game's compatibility files are located.
-                        </li>
+                        <li><strong>Prefix</strong> folder: Where all of the game's Windows compatibility files and
+                            saves are located.</li>
                         <ul>
-                            <div class="card-basic">
-                                <p>~/.steam/steam/steamapps/compatdata/22380</p>
-                            </div>
+                            <li>For Steam:
+                                <div class="card-basic">
+                                    <p>~/.steam/steam/steamapps/compatdata/22380</p>
+                                </div>
+                            </li>
+                            <li>For Heroic Games Launcher:
+                                <div class="card-basic">
+                                    <p>~/Games/Heroic/Prefixes/default/Fallout New Vegas</p>
+                                </div>
+                            </li>
                         </ul>
                     </ul>
                     </p>
                 </div>
                 <div class="card" id="GeneratingINIs" title="Generating INIs">
                     <p>
-                    <h3>Generating Fresh Configuration Files</h3>
-
+                    <h3>Generating Fresh INI Files</h3>
                     <ol>
-                        <li><a href="steam://rungameid/22380" target="_blank">Click here</a> to run the game from Steam
-                        </li>
-                        <li>Allow Steam to generate a Vulkan shader cache. This will take a few minutes.</li>
-                        <li>Click OK to both pop-ups that say <b>Detecting Video Hardware</b>.</li>
+                        <li>Run the game from Steam or Heroic Games Launcher.</li>
+                        <li>Click OK to on the pop-up that says <b>Detecting Video Hardware</b>.</li>
                         <ul>
-                            <li>If there aren't any pop-ups, try re-installing the game, and then try again.</li>
+                            <li>If there aren't any pop-ups, re-install the game, following the steps above and then try
+                                again.</li>
                         </ul>
                         <li>Click <b>OK</b> then <b>Exit</b>.</li>
                     </ol>
                     </p>
                 </div>
 
-                <div class="card" id="CPPRedists" title="Installing Visual C++ Redistributables">
-                    <p>
-                    </p>
-                    <h3>Installing Visual C++ Redistributables</h3>
-                    Yvile's Crash Logger, a core mod in this guide, requires the latest Visual C++ Redistributables to
-                    be installed. We will use Protontricks to install it.
-                    <div class="card-red">
-                        <p>
-                            Failure to have the Visual C++ redistributables installed will result in an immediate crash
-                            when launching the game or modding tools.
-                        </p>
-                    </div>
-                    <ol>
-                        <li>Open Protontricks</li>
-                        <li>Click <strong>Fallout New Vegas</strong>, then click <strong>OK</strong></li>
-                        <li>Click <strong>OK</strong></li>
-                        <li>Click <strong>Install a Windows DLL or component</strong>, then click <strong>OK</strong>
-                        </li>
-                        <li>Scroll down until you find the package named <span class="card-basic">vcrun2022</span>. This
-                            is the latest version of the Visual C++ Redistributables. Tick the box next to it and then
-                            click <strong>OK</strong> </li>
-                        <li>Wait. This process may take a while.</li>
-                        <li>Once installation has finished, keep clicking <strong>Cancel</strong> until the application
-                            quits.</li>
-                    </ol>
-                </div>
             </span>
 
             <div class="navigationArrowContainer">
@@ -246,8 +391,8 @@
                     <span class="arrowText"></span>
                 </a>
 
-                <a href="#" id="next" rel="next" class="navigationArrow">
-                    <span class="arrowText"></span>
+                <a href="mo2.html" id="next" rel="next" class="navigationArrow">
+                    <span class="arrowText">Mod Organizer 2</span>
                     <img src="./img/UI/Arrow.svg" alt="Forward Arrow">
                 </a>
             </div>
